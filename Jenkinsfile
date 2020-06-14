@@ -2,14 +2,14 @@ pipeline {
    agent any
 
    stages {
-      stage('Validation') {
+      stage ('Validation') {
          steps {
-           python scope.py
+           sh 'python scope.py'
          }
       }
-     stage('Testing') {
+     stage ('Testing') {
          steps {
-           python nosy.py
+           sh 'python nosy.py'
          }
       }
    }
