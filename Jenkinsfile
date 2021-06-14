@@ -7,7 +7,7 @@ pipeline {
            sh 'python scope.py'
          }
       }
-     stage ('Testing') {
+     stage ('Testings') {
          steps {
            sh 'python nosy.py'
          }
